@@ -38,6 +38,15 @@
 @use "shortcode/team";
 @use "shortcode/card";
 
+/* Mobile-first polish: adequate touch targets and spacing */
+@media (max-width: 575px) {
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .cs_gallery.cs_style_1 {
   position: relative;
   overflow: hidden;

@@ -72,6 +72,11 @@
     max-width: 520px;
     line-height: 1.4em;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
   .cs_hero_subtitle_weight {
     font-weight: 500;

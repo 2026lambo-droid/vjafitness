@@ -44,6 +44,8 @@
 .cs_fs_80 {
   font-size: 80px;
   line-height: 1.25em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   @media (max-width: 1400px) {
     font-size: 70px;
   }
@@ -54,7 +56,10 @@
     font-size: 50px;
   }
   @media (max-width: 575px) {
-    font-size: 48px;
+    font-size: 44px;
+  }
+  @media (max-width: 390px) {
+    font-size: 38px;
   }
 }
 .cs_fs_100 {
@@ -415,6 +420,9 @@ hr {
 }
 .cs_btn.cs_style_2 {
   position: relative;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   &::after {
     content: "";
     position: absolute;
@@ -609,11 +617,16 @@ hr {
   }
   .cs_section_title {
     max-width: 800px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     @media (max-width: 1400px) {
       max-width: 700px;
     }
     @media (max-width: 1199px) {
       max-width: 600px;
+    }
+    @media (max-width: 575px) {
+      max-width: 100%;
     }
     span {
       background: linear-gradient(
@@ -634,7 +647,7 @@ hr {
       max-width: 260px;
     }
     @media (max-width: 991px) {
-      max-width: 220px;
+      max-width: 100%;
     }
   }
 }
@@ -736,6 +749,15 @@ hr {
   }
   @media (max-width: 991px) {
     min-height: 280px;
+  }
+  @media (max-width: 575px) {
+    min-height: 260px;
+  }
+  @media (max-width: 390px) {
+    min-height: 220px;
+  }
+  @media (max-width: 991px) {
+    margin-bottom: 24px;
   }
   img {
     display: block;
